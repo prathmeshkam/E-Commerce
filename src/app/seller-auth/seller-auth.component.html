@@ -1,10 +1,14 @@
-<div class="seller-auth">
-    <div class="sign-up">
-        <h1>Sign Up</h1>
-        <form class="form" #signUpForm="ngForm" (ngSubmit)="signUp(signUpForm.value)">
-            <input class="form-input" type="email" ngModel name="email" placeholder="Enter Email">
-            <input class="form-input" type="password" ngModel name="password" placeholder="Enter Password">
-            <button class="form-btn">Sign Up</button>
-        </form>
-    </div>
-</div>
+<mat-card style="border: 1px solid aqua;width: 400px;height: 400px;margin-left: 35%;margin-top: 10%;">
+    <mat-card-content>
+        <div class="seller-auth">
+            <div class="sign-up">
+                <h1>Sign Up</h1>
+                <form class="form" #signUpForm="ngForm" (ngSubmit)="signUp(signUpForm.value)">
+                    <input class="form-input" type="email" ngModel name="email" placeholder="Enter Email">
+                    <input class="form-input" type="password" ngModel name="password" placeholder="Enter Password">
+                    <button mat-raised-button color="primary">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>

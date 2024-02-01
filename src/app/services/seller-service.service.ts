@@ -21,14 +21,14 @@ export class SellerService {
   })
   }
 
-  reloadSeller()
-  {
-    if(this.localStorage.getItem('seller'))
-    {
-    this.localStorage.setItem('isSellerLogedIn','true');
-    this.router.navigate(['seller-home']);
-    }
-  }
+  // reloadSeller()
+  // {
+  //   if(this.localStorage.getItem('seller'))
+  //   {
+  //   this.localStorage.setItem('isSellerLogedIn','true');
+  //   this.router.navigate(['seller-home']);
+  //   }
+  // }
  
 
 }

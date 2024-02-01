@@ -1,5 +1,15 @@
 .seller-auth .sign-up h1 {
     text-align: center;
-    margin-top: 181px;
-    margin-bottom: 46px;
+    margin-top: 91px;
+    margin-bottom: 34px;
+}
+
+.mat-mdc-card {
+    border: 1px solid aqua;
+    width: 400px;
+    height: 400px;
+    margin-left: 35%;
+    margin-top: 10%;
+    background-color: lightslategray;
+    border-radius: 15px;
 }

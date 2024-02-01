@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatFormFieldModule, matFormFieldAnimations } from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink,MatToolbarModule,MatFormFieldModule,MatButtonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

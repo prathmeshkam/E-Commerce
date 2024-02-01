@@ -3,10 +3,13 @@ import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { signup } from '../signup';
 import { SellerService } from '../services/seller-service.service';
+import {MatCardModule} from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
 @Component({
   selector: 'app-seller-auth',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,MatCardModule,MatFormFieldModule,MatButtonModule],
   templateUrl: './seller-auth.component.html',
   styleUrl: './seller-auth.component.css'
 })
@@ -18,7 +21,7 @@ signUp(data:signup):void
 this.sellerservice.userSignIn(data);
 }
 
-ngOnInit(){
-  this.sellerservice.reloadSeller();
-}
+// ngOnInit(){
+//   this.sellerservice.reloadSeller();
+// }
 }

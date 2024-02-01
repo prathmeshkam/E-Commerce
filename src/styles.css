@@ -5,12 +5,7 @@
 
 body {
     font-family: sans-serif;
-    margin: 1;
-}
-
-.container {
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-left: 2px;
 }
 
 .form {
