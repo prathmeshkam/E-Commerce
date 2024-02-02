@@ -12,11 +12,36 @@ import { Router } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+menuType:string = 'default';
+sellerName:string = '';
 constructor(private router:Router){}
 
 ngOnInit():void{
   this.router.events.subscribe((val:any)=>{
-    console.warn(val.url);
+    if(val.url)
+    {
+      if(localStorage.getItem('seller') && val.url.includes('seller'))
+      {
+        console.warn("In seller area");
+        this.menuType = 'seller';
+        if(localStorage.getItem('seller'))
+        {
+          let sData = localStorage.getItem('seller');
+          let sName = sData && JSON.parse(sData)[0];
+          this.sellerName = sName.name;
+        }
+      }
+      else{
+        console.warn("Outside seller");
+        this.menuType = 'default';
+      }
+    }
   })
+}
+
+logout()
+{
+  localStorage.removeItem("seller");
+  this.router.navigate(['']);
 }
 }

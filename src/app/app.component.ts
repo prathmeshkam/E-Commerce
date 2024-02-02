@@ -8,12 +8,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SellerService } from './services/seller-service.service';
+import { SellerAddProdComponent } from './seller-add-prod/seller-add-prod.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet,HeaderComponent,
-    HomeComponent,SellerAuthComponent,FormsModule,HttpClientModule,SellerHomeComponent],
+    HomeComponent,SellerAuthComponent,FormsModule,HttpClientModule,SellerHomeComponent,SellerAddProdComponent],
     providers:[SellerService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

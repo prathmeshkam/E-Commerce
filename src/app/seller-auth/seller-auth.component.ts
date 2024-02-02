@@ -24,9 +24,9 @@ signUp(data:signup):void
 this.sellerservice.userSignIn(data);
 }
 
-// ngOnInit(){
-//   this.sellerservice.reloadSeller();
-// }
+ngOnInit(){
+  this.sellerservice.reloadSeller();
+}
 
 
 loginCheck:boolean = false;

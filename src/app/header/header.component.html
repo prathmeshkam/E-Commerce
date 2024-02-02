@@ -15,17 +15,26 @@
     </nav>
 </div> -->
 <nav>
-    <img src="https://th.bing.com/th/id/R.290e18969c9591b792df806809055959?rik=d8X6ze5bb%2f41JQ&riu=http%3a%2f%2fwww.pngplay.com%2fwp-content%2fuploads%2f1%2fOnline-Shopping-Cart-PNG-Background-Image.png&ehk=3Ms0Lc%2bsQT5DE4mm15WawVTkUeVf2i%2fYKLWRwPE%2bXeQ%3d&risl=&pid=ImgRaw&r=0"
-        style="width: 80px;background-color: rgb(58, 51, 64);">
+    <a routerLink=""> <img src="https://th.bing.com/th/id/R.290e18969c9591b792df806809055959?rik=d8X6ze5bb%2f41JQ&riu=http%3a%2f%2fwww.pngplay.com%2fwp-content%2fuploads%2f1%2fOnline-Shopping-Cart-PNG-Background-Image.png&ehk=3Ms0Lc%2bsQT5DE4mm15WawVTkUeVf2i%2fYKLWRwPE%2bXeQ%3d&risl=&pid=ImgRaw&r=0"
+            style="width: 80px;background-color: rgb(58, 51, 64);"></a>
 
     <ul>
+        @if(menuType==='default'){
         <div class="nav-search">
             <input type="text" placeholder="Search for Products">
             <button mat-stroked-button color="accent"><span>Search</span></button>
         </div>
+        } @switch(menuType){ @case("default"){
         <li><a routerLink="">Home</a></li>
         <li><a routerLink="seller">Seller</a></li>
         <li><a routerLink="">Login</a></li>
         <li><a routerLink="">Cart(0)</a></li>
+        } @case("seller"){
+        <li><a routerLink="seller-home">Product List</a></li>
+        <li><a routerLink="seller-add-prod">Add Product</a></li>
+        <li><a (click)="logout()">Logout</a></li>
+        <li><a routerLink="">{{sellerName}}</a></li>
+        } }
+
     </ul>
 </nav>
