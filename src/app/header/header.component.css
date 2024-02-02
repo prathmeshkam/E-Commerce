@@ -41,6 +41,8 @@ ul li a:hover {
 
 .nav-search button {
     height: 49px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bold;
 }
 
 .nav-search button span:hover {

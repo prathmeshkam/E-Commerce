@@ -1,15 +1,39 @@
 .seller-auth .sign-up h1 {
     text-align: center;
-    margin-top: 91px;
+    margin-top: 10px;
     margin-bottom: 34px;
+    font-family: Copperplate, Papyrus, fantasy;
+    color: aliceblue;
 }
 
 .mat-mdc-card {
     border: 1px solid aqua;
     width: 400px;
     height: 400px;
-    margin-left: 35%;
+    margin-left: 38%;
     margin-top: 10%;
-    background-color: lightslategray;
+    background-image: url("https://img.freepik.com/free-vector/gradient-technological-background_23-2148884155.jpg?size=626&ext=jpg");
     border-radius: 15px;
+}
+
+.mat-mdc-card p {
+    color: white;
+    margin-top: 10px;
+    margin-left: 88px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bold;
+}
+
+.mat-mdc-card p a {
+    color: yellow;
+    font-style: italic;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.mat-mdc-card button {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bold;
+    background-color: unset;
+    border: 1px solid white;
 }

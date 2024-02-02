@@ -6,6 +6,8 @@
 body {
     font-family: sans-serif;
     padding-left: 2px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bold;
 }
 
 .form {
@@ -20,11 +22,15 @@ body {
     height: 35px;
     margin-bottom: 11px;
     padding-left: 13px;
-    border: 1px solid blueviolet;
+    border: 2px solid green;
+    border-radius: 12px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bold;
 }
 
 .form-btn {
     height: 35px;
     border: 1px solid blueviolet;
     cursor: pointer;
+    border-radius: 20px;
 }

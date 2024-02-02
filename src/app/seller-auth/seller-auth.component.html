@@ -1,14 +1,43 @@
-<mat-card style="border: 1px solid aqua;width: 400px;height: 400px;margin-left: 35%;margin-top: 10%;">
+ @if(loginCheck){
+<mat-card>
     <mat-card-content>
         <div class="seller-auth">
+
             <div class="sign-up">
                 <h1>Sign Up</h1>
                 <form class="form" #signUpForm="ngForm" (ngSubmit)="signUp(signUpForm.value)">
+                    <input class="form-input" type="name" ngModel name="name" placeholder="Enter Name">
                     <input class="form-input" type="email" ngModel name="email" placeholder="Enter Email">
                     <input class="form-input" type="password" ngModel name="password" placeholder="Enter Password">
-                    <button mat-raised-button color="primary">Sign Up</button>
+                    <button mat-raised-button color="primary"><span>Sign Up</span> </button>
                 </form>
             </div>
+
         </div>
     </mat-card-content>
+    <p>Already have account?<a (click)="openLogin()"> Login</a></p>
 </mat-card>
+} @if(!loginCheck){
+<mat-card>
+    <mat-card-content>
+        <div class="seller-auth">
+
+            <div class="sign-up">
+
+                <h1>Login</h1>
+                <form class="form" #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)">
+
+                    <input class="form-input" type="email" ngModel name="email" placeholder="Enter Email">
+                    <input class="form-input" type="password" ngModel name="password" placeholder="Enter Password">
+
+                    <button mat-raised-button color="primary"><span>Login</span> </button>
+
+
+                </form>
+            </div>
+
+        </div>
+    </mat-card-content>
+    <p>Create an account?<a (click)="openSignup()"> Register</a></p>
+</mat-card>
+}
