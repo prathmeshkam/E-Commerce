@@ -3,7 +3,9 @@ import { products } from '../signup';
 import { ProductsService } from '../services/products.service';
 import {MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faTrash , faEdit} from '@fortawesome/free-solid-svg-icons';
+import { RouterLink } from '@angular/router';
 export interface PeriodicElement {
   name:string,
   price:number,
@@ -16,18 +18,17 @@ export interface PeriodicElement {
 @Component({
   selector: 'app-seller-home',
   standalone: true,
-  imports: [MatTableModule,MatIconModule],
+  imports: [MatTableModule,MatIconModule,FontAwesomeModule,RouterLink],
   templateUrl: './seller-home.component.html',
   styleUrl: './seller-home.component.css'
 })
 
 
-
 export class SellerHomeComponent implements OnInit {
 list:products[] = [];
 constructor(private productservice:ProductsService){}
-
-
+icon = faTrash;
+edit = faEdit;
 sr:number = this.list.length;
 ngOnInit():void{
 this.refresh();

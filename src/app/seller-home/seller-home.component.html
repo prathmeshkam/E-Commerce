@@ -37,11 +37,10 @@
     <ng-container matColumnDef="action">
         <th mat-header-cell *matHeaderCellDef> Action </th>
         <td mat-cell *matCellDef="let element">
-
-            <button (click)="deleteProd(element.id)" mat-fab color="warn" aria-label="Example icon button with a delete icon">
-              <mat-icon>delete</mat-icon>
-            </button>
-
+            <fa-icon (click)="deleteProd(element.id)" [icon]="icon"></fa-icon>
+            <a class="edit" routerLink="/update-prod">
+                <fa-icon [icon]="edit"></fa-icon>
+            </a>
         </td>
     </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

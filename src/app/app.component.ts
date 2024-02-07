@@ -10,13 +10,15 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SellerService } from './services/seller-service.service';
 import { SellerAddProdComponent } from './seller-add-prod/seller-add-prod.component';
 import { ProductsService } from './services/products.service';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { UpdateProdComponent } from './update-prod/update-prod.component';
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet,HeaderComponent,
-    HomeComponent,SellerAuthComponent,FormsModule,HttpClientModule,SellerHomeComponent,SellerAddProdComponent],
-    providers:[SellerService,ProductsService],
+            HomeComponent,SellerAuthComponent,FormsModule,HttpClientModule,SellerHomeComponent,SellerAddProdComponent,FontAwesomeModule
+          ,UpdateProdComponent],
+  providers:[SellerService,ProductsService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
