@@ -1,11 +1,12 @@
 .mat-mdc-card {
-    border: 1px solid aqua;
+    border: 1px solid black;
     width: 400px;
     height: 400px;
-    margin-left: 38%;
-    margin-top: 10%;
-    background-image: url("https://th.bing.com/th/id/OIP.1ILPEtXXYmvnPIHhh_YxAwHaEo?w=255&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7");
+    margin-left: 3%;
+    margin-top: 20%;
     border-radius: 15px;
+    margin-bottom: 10%;
+    background-color: black;
 }
 
 .mat-mdc-card p {
@@ -31,7 +32,19 @@
     color: aliceblue;
 }
 
-.mat-mdc-card h1 {
-    color: aliceblue;
-    margin-left: 10px
+.container {
+    display: inline-flex;
+    margin-top: 0px;
+    margin-left: 10%;
+}
+
+.container .heading img {
+    width: 700px;
+    margin-left: 20%;
+    margin-top: 1%;
+}
+
+h1 {
+    margin-left: 50%;
+    margin-top: 10%;
 }

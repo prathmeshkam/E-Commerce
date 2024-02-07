@@ -1,16 +1,27 @@
 {
   "seller": [
     {
-      "id": "fa36",
+      "id": "1",
       "name": "Prathmesh",
       "email": "p@gmail.com",
       "password": "1234"
     },
     {
-      "id": "56e5",
+      "id": "2",
       "name": "Prathmesh",
       "email": "l@gmail.como",
       "password": "456"
+    }
+  ],
+  "products": [
+    {
+      "id": "d19e",
+      "name": "huhk",
+      "price": "565",
+      "company": "bjhb",
+      "color": "bhjb",
+      "description": "bj",
+      "url": "bb"
     }
   ]
 }
