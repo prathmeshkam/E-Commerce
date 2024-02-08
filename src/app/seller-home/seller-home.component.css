@@ -1,9 +1,9 @@
 .mdc-data-table__table {
-    min-width: 50%;
+    min-width: 78%;
     border: 0;
     white-space: nowrap;
     border-spacing: 0;
-    margin-left: 25%;
+    margin-left: 10%;
     margin-top: 100px;
 }
 
@@ -14,7 +14,7 @@ h1 {
 }
 
 img {
-    width: 35px;
+    width: 55px;
 }
 
 p {

@@ -16,3 +16,12 @@ export interface products{
     description:string,
     url:string
 }
+export interface product{
+    id:string,
+    name:string,
+    price:number,
+    company:string,
+    color:string,
+    description:string,
+    url:string
+}

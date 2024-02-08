@@ -8,9 +8,9 @@ import { UpdateProdComponent } from './update-prod/update-prod.component';
 
 export const routes: Routes = [
     {path:'',component:HomeComponent},
-    {path:'update-prod',component:UpdateProdComponent},
     {path:'seller',component:SellerAuthComponent},
     {path:'seller-home',component:SellerHomeComponent , canActivate:[sellerAuthGuard]},
     {path:'seller-add-prod',component:SellerAddProdComponent , canActivate:[sellerAuthGuard]},
+    {path:'seller-update-prod/:id',component:UpdateProdComponent},
     
 ];

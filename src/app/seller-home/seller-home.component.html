@@ -38,7 +38,7 @@
         <th mat-header-cell *matHeaderCellDef> Action </th>
         <td mat-cell *matCellDef="let element">
             <fa-icon (click)="deleteProd(element.id)" [icon]="icon"></fa-icon>
-            <a class="edit" routerLink="/update-prod">
+            <a class="edit" routerLink="/seller-update-prod/{{element.id}}">
                 <fa-icon [icon]="edit"></fa-icon>
             </a>
         </td>

@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { ProductsService } from '../services/products.service';
 import { products } from '../signup';
 import { Router } from '@angular/router';
-import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import Swal from 'sweetalert2'
 @Component({
   selector: 'app-seller-add-prod',

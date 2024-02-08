@@ -1,0 +1,50 @@
+.mat-mdc-card {
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    margin-left: 3%;
+    margin-top: 20%;
+    border-radius: 15px;
+    margin-bottom: 10%;
+    background-color: black;
+}
+
+.mat-mdc-card p {
+    color: white;
+    margin-top: 10px;
+    margin-left: 88px;
+    font-family: Book Antiqua;
+    font-weight: bold;
+}
+
+.mat-mdc-card p a {
+    color: yellow;
+    font-style: italic;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.mat-mdc-card button {
+    font-family: Book Antiqua;
+    font-weight: bold;
+    background-color: unset;
+    border: 1px solid white;
+    color: aliceblue;
+}
+
+.container {
+    display: inline-flex;
+    margin-top: 0px;
+    margin-left: 10%;
+}
+
+.container .heading img {
+    width: 700px;
+    margin-left: 20%;
+    margin-top: 1%;
+}
+
+h1 {
+    margin-left: 50%;
+    margin-top: 10%;
+}
