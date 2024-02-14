@@ -23,17 +23,18 @@
 <div class="products">
     <h1>Trending Products</h1>
     <div class="row">
+        @for(p of trendyProd;track p){
         <div class="col-sm-3">
             <div class="product-item">
-                <img src="https://th.bing.com/th?id=OIP.6QaNirTEp3oUxvHxnKklvgHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2">
+                <img src="{{p.url}}">
 
                 <div class="productDetails">
-                    <h6>Mouse</h6>
+                    <strong style="background-color: #289f4880;;">{{p.name}}</strong>
                     <div class="prod-price">
-                        <h6>Price - 500</h6>
+                        <h6>Price - {{p.price}}</h6>
                     </div>
                     <div class="prod-color">
-                        <h6>Color - Black</h6>
+                        <h6>Color - {{p.color}}</h6>
                     </div>
                     <div class="prod-footer">
                         <a href="">See Details</a>
@@ -41,9 +42,11 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
-
+        }
     </div>
+
 
 </div>

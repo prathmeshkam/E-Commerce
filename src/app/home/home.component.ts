@@ -11,6 +11,7 @@ import { product} from '../signup';
 })
 export class HomeComponent {
   popularProd : undefined | product[];
+  trendyProd : undefined | product[];
   constructor(private prodservice: ProductsService){}
   
 
@@ -19,6 +20,13 @@ export class HomeComponent {
     this.prodservice.popularProd().subscribe((p)=>{
       this.popularProd = p;
     })
-
+    this.prodservice.trendProd().subscribe((res)=>{
+      this.trendyProd = res;
+    })
+  
   }
+
+
+
+
 }

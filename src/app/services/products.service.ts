@@ -38,4 +38,8 @@ export class ProductsService {
   popularProd(){
     return this.http.get<product[]>("http://localhost:3000/products?_limit=3");
     }
+
+  trendProd(){
+    return this.http.get<product[]>("http://localhost:3000/products?_limit=6");
+  }
 }
