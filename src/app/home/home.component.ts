@@ -1,12 +1,24 @@
-import { Component } from '@angular/core';
-
+import { Component , OnInit} from '@angular/core';
+import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProductsService } from '../services/products.service';
+import { product} from '../signup';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [NgbCarouselModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  popularProd : undefined | product[];
+  constructor(private prodservice: ProductsService){}
+  
 
+  ngOnInit():void
+  {
+    this.prodservice.popularProd().subscribe((p)=>{
+      this.popularProd = p;
+    })
+
+  }
 }

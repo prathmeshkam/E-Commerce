@@ -1,0 +1,30 @@
+.c-image {
+    object-fit: contain;
+    height: 500px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.container {
+    width: 100%;
+}
+
+.carousel-caption {
+    background-color: #00000080;
+    color: white;
+    border-radius: 5px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    margin-left: 192px;
+}
+
+.product-item img {
+    width: 200px;
+}
+
+.products {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
