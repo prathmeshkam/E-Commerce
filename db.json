@@ -27,15 +27,6 @@
   ],
   "products": [
     {
-      "name": "Soap",
-      "price": "399",
-      "company": "xyz",
-      "color": " Blue",
-      "description": "Good for skin",
-      "url": "https://th.bing.com/th/id/OIP.jrsYR0R-DEYPS7s15vsgpQHaFi?rs=1&pid=ImgDetMain",
-      "id": "0e91"
-    },
-    {
       "id": "47cf",
       "name": "Laptop",
       "price": "150000",

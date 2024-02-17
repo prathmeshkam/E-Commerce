@@ -42,4 +42,5 @@ export class ProductsService {
   trendProd(){
     return this.http.get<product[]>("http://localhost:3000/products?_limit=6");
   }
+
 }

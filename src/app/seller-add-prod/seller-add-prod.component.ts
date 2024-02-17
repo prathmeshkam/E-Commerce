@@ -30,4 +30,6 @@ addproduct(data:products)
   this.router.navigate(['seller-home'])
   
 }
+
+
 }

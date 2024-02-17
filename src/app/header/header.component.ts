@@ -4,17 +4,25 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule, matFormFieldAnimations } from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import { Router } from '@angular/router';
+import { ProductsService } from '../services/products.service';
+import { products } from '../signup';
+import { FormsModule } from '@angular/forms';
+import { SearchPipe } from '../pipes/search.pipe';
+
+
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink,MatToolbarModule,MatFormFieldModule,MatButtonModule],
+  imports: [RouterLink,MatToolbarModule,MatFormFieldModule,MatButtonModule,FormsModule,SearchPipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
 menuType:string = 'default';
+dataSearch:undefined | products[];
+searchText = '';
 sellerName:string = '';
-constructor(private router:Router){}
+constructor(private router:Router,private service:ProductsService){}
 
 ngOnInit():void{
   this.router.events.subscribe((val:any)=>{
@@ -37,6 +45,13 @@ ngOnInit():void{
       }
     }
   })
+
+
+  this.service.productList().subscribe((res)=>{
+    this.dataSearch = res;
+    console.warn(this.dataSearch);
+  })
+
 }
 
 logout()
@@ -44,4 +59,30 @@ logout()
   localStorage.removeItem("seller");
   this.router.navigate(['']);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

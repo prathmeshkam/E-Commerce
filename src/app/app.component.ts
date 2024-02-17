@@ -12,12 +12,14 @@ import { SellerAddProdComponent } from './seller-add-prod/seller-add-prod.compon
 import { ProductsService } from './services/products.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { UpdateProdComponent } from './update-prod/update-prod.component';
+import { FooterComponent } from './footer/footer.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet,HeaderComponent,
             HomeComponent,SellerAuthComponent,FormsModule,HttpClientModule,SellerHomeComponent,SellerAddProdComponent,FontAwesomeModule
-          ,UpdateProdComponent],
+          ,UpdateProdComponent,FooterComponent],
   providers:[SellerService,ProductsService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
