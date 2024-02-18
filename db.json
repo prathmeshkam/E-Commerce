@@ -27,13 +27,13 @@
   ],
   "products": [
     {
-      "id": "47cf",
       "name": "Laptop",
       "price": "150000",
       "company": "Lenove",
-      "color": "White",
+      "color": "Blue",
       "description": "It is a portable and wightless",
-      "url": "https://th.bing.com/th?id=OIP.sexbwF9SnUpsFpayGlFUUAHaFs&w=285&h=219&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2"
+      "url": "https://th.bing.com/th?id=OIP.sexbwF9SnUpsFpayGlFUUAHaFs&w=285&h=219&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2",
+      "id": "47cf"
     },
     {
       "id": "27df",

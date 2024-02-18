@@ -21,8 +21,8 @@
     <ul>
         @if(menuType==='default'){
         <div class="nav-search">
-            <input type="text" [(ngModel)]="searchText" placeholder="Search for Products">
-            <button mat-stroked-button color="accent"><span>Search</span></button>
+            <input type="text" [(ngModel)]="searchText" placeholder="Search for Products" #searchProd>
+            <button (click)="submitSearch(searchProd.value)" mat-stroked-button color="accent"><span>Search</span></button>
         </div>
         } @switch(menuType){ @case("default"){
         <li><a routerLink="">Home</a></li>

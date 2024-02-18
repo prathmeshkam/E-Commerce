@@ -1,0 +1,22 @@
+.footer-menu {
+    display: flex;
+    justify-content: space-around;
+    /* Adjust as needed */
+    list-style-type: none;
+    background-color: black;
+    height: 1cm;
+}
+
+.footer-menu li {
+    text-align: center;
+    margin-top: 7px;
+    /* To center the text horizontally */
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #333;
+    color: white;
+    cursor: pointer;
+    /* Adjust color as needed */
+}

@@ -61,7 +61,11 @@ logout()
 }
 
 
-
+submitSearch(data:any)
+{
+  console.warn(data);
+  this.router.navigate([`search-prod/${data}`])
+}
 
 
 

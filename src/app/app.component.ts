@@ -13,13 +13,14 @@ import { ProductsService } from './services/products.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { UpdateProdComponent } from './update-prod/update-prod.component';
 import { FooterComponent } from './footer/footer.component';
+import { SearchComponent } from './search/search.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet,HeaderComponent,
             HomeComponent,SellerAuthComponent,FormsModule,HttpClientModule,SellerHomeComponent,SellerAddProdComponent,FontAwesomeModule
-          ,UpdateProdComponent,FooterComponent],
+          ,UpdateProdComponent,FooterComponent,SearchComponent],
   providers:[SellerService,ProductsService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
