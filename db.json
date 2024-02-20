@@ -70,6 +70,15 @@
       "color": "White",
       "description": "Flexible",
       "url": "https://th.bing.com/th?q=Product+Bag&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.1&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247"
+    },
+    {
+      "id": "c65e",
+      "name": "Laptop",
+      "price": "4552222",
+      "company": "HP",
+      "color": "White",
+      "description": "It has 500Gb SSD.",
+      "url": "https://th.bing.com/th?id=OIP.JJFIO4SnP4ITFAJYe3zXnAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2"
     }
   ]
 }

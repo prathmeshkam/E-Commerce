@@ -5,6 +5,8 @@
     list-style-type: none;
     background-color: black;
     height: 1cm;
+    position: absolute;
+    width: 100%;
 }
 
 .footer-menu li {

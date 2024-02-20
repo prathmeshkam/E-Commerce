@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { product, products } from '../signup';
+import { query } from '@angular/animations';
 @Injectable({
   providedIn: 'root'
 })
@@ -43,4 +44,9 @@ export class ProductsService {
     return this.http.get<product[]>("http://localhost:3000/products?_limit=6");
   }
 
-}
+  searchProd(q:string)
+  {
+ return this.http.get<product[]>(`http://localhost:3000/products?name=${q}`)
+  }
+
+} 
