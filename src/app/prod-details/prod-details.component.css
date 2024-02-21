@@ -1,0 +1,17 @@
+.container {
+    margin-left: 37%;
+}
+
+.container img {
+    height: 10cm;
+}
+
+.d {
+    margin-left: 40%;
+    background-color: aqua;
+    width: 10cm;
+}
+
+.d p {
+    margin-left: 125px;
+}

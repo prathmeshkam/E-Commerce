@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ProductsService } from '../services/products.service';
 import { product } from '../signup';
 @Component({
   selector: 'app-search',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './search.component.html',
   styleUrl: './search.component.css'
 })
@@ -18,7 +18,11 @@ searchProd:product[] | undefined;
     let query = this.activeRoute.snapshot.paramMap.get('query')
     query && this.service.searchProd(query).subscribe((res:any)=>{
       this.searchProd = res;
+
+      console.warn(query);
     })
     
   }
+
+  
 }

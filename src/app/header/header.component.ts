@@ -67,6 +67,9 @@ submitSearch(data:any)
   this.router.navigate([`search-prod/${data}`])
 }
 
+refreshPage() {
+  location.reload();
+}
 
 
 
